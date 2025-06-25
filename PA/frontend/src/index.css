@@ -1,0 +1,91 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 142 76% 36%;
+  --primary-foreground: 355.7 100% 97.3%;
+  --secondary: 210 40% 98%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 98%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 98%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 142 76% 36%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.solar-gradient {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%);
+}
+
+.energy-gradient {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+}
+
+.savings-gradient {
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.chart-tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-glow {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.weather-card {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+}
+
+.solar-panel-pattern {
+  background-image: 
+    linear-gradient(45deg, transparent 25%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.1) 75%),
+    linear-gradient(-45deg, transparent 25%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.1) 75%);
+  background-size: 20px 20px;
+}
